@@ -2,6 +2,15 @@
 using System.Xml.XPath;
 
 Pizza pizza = new Pizza();
+
+Console.WriteLine(pizza.getSize());
+pizza.setNumCheeseTop(2);
+Console.WriteLine(pizza.getNumCheeseTop());
+pizza.setNumPepperoniTop(1);
+Console.WriteLine(pizza.getNumPepperoniTop());
+pizza.setNumHamTop(4);
+Console.WriteLine(pizza.getNumHamTop());
+
 Pizza pizza2 = new Pizza("large",20,10,30);
 
 Console.WriteLine(pizza.toString());
@@ -28,7 +37,7 @@ class Pizza {
 
     public void setSize(string _size) { size = _size; }
     public void setNumCheeseTop(int top) { numCheeseTop = top; }
-    public void setNumPepperoniTo(int top) { numPepperoniTop = top; }
+    public void setNumPepperoniTop(int top) { numPepperoniTop = top; }
     public void setNumHamTop(int top) { numHamTop = top; }
 
     public double CalculateCost()
